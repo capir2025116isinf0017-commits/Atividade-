@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="nota1" placeholder="digite sua nota">
+    <p id="psaida"></p>
+    <button onclick="verificar()">veja se passou</button>
+    <script>
+        
+         function verificar(){
+           let nota = document.getElementById("nota1").value;
+           document.getElementById("psaida").innerText = "nota";
+           if (nota >= 7){
+             document.getElementById("psaida").innerText="aprovado";
+           }
+           else {
+               document.getElementById("psaida").innerText="reprovado";
+           }
+        }
+    
+    </script>
+</body>
+</html>
